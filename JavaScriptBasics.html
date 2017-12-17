@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Basics</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="FlexboxPracticalExamplesStyles.css">
+</head>
+<body>
+	<h1>JavaScript Basics</h1>
+	
+<script language="javascript" type="text/javascript">
+	document.write(Number.MAX_VALUE + "<br />");
+	document.write(Number.MIN_VALUE + "<br />");
+	var sampleString = "Escaped characters: \" \' \\ \t \n \n";
+	document.write(sampleString + "<br /><br />");
+
+	//STRING MANIPULATION
+	var firstString = "First string ";
+	var secondString = "Second string";
+	var combinedString = firstString + secondString;
+	document.write(combinedString + "<br />");
+	document.write("Length of string: " + combinedString.length + "<br />");
+	document.write("Substring " + combinedString.substring(6, 9) + "<br />");
+	document.write("Last character in a string: " + combinedString.charAt(combinedString.length - 1) + "<br />");
+	document.write("Index of T is: " + combinedString.indexOf('t') + "<br /><br />");
+
+	var stringVariable = "5";
+	var numberVariable = 10;
+	var sum = stringVariable + numberVariable;
+	var product = stringVariable * numberVariable;
+	document.write("Sum if 1 value is a string then JS treats all like string, so 5 and 10 is: " + sum + "<br />");
+	document.write("Multiplication gets multiplied, since you can't multiply a string, so 5 * 10 is :  " + product + "<br /><br />");
+
+	//COMPARISONS
+	var five = 5;
+	var ten = 10;
+	var six = 6;
+	var one = 1;
+	document.write("Is 5 > 10: " + (five > ten) + "<br />");
+	document.write("Is 5 >= 10: " + (five >= ten) + "<br />");
+	document.write("Is 5 > 10: " + (five > ten) + "<br />");
+	document.write("Is 5 => 10: " + (five => ten) + "<br />");
+	document.write("Is 5 == 10: " + (five === ten) + "<br />");
+	document.write("Is 5 != 10: " + (five !== ten) + "<br />");
+
+	//LOGICAL OPERATORS
+	document.write("Is 5 != 10  && 5 != 1: " + (five !== ten && five !== one) + "<br />");
+	document.write("Is 5 < 10  && 5 < 6 1: " + (five < ten && five < six) + "<br />");
+	document.write("Is 5 > 10 || 5 > 6: " + (five > ten || five > six) + "<br />");
+	document.write("Is 5 == 6 ^| 5 == 5: " + (five === six ^ five === six) + "<br /><br />");
+
+	//ARRAYS
+	var vehicles = new Array("car", "van", "truck" );
+	document.write("Second item in array: " + vehicles[1] + "<br />");
+
+	for(i in vehicles){document.write(vehicles[i] + "<br />")}
+
+	//THE CONDITIONALS: ?:
+	var randomVariable = (5 < 10) ? "less than 10" : "greater than 10";
+	document.write("Is 5 > 10 or < 10? 5 is " + randomVariable +"<br />");
+
+	// IF
+
+	// SWITCH
+	var state = "Ohio";
+
+	switch (state)
+	{
+		case "California":
+		    document.write("Warmer than Ohio" + "<br /><br />");
+			break;
+		case "Ohio":
+		    document.write("Same weather as Ohio" + "<br /><br />");
+			break;
+		case "Canada":
+		    document.write(" Canada" + "<br /><br />");
+			break;
+		default:
+		    document.write("I don't know!" + "<br /><br />");
+			break;
+	}
+
+	// LOOPS
+	// while
+	var count = 1;
+	while (count < 10) {
+		document.write("An odd number less than 10 is: " + count + "<br />");
+		if (count%2) {
+			count++;
+		}
+		count++;
+	}
+
+	// do while
+	do {
+	    document.write("The do while statement prints once even if not true: " + count + "<br /><br />");
+		count--;
+	} while ( count > 10);
+
+	//for
+	for (var count = 0; count <= 10; count++) {
+		document.write("Count is " + count + "<br />");
+	}
+
+
+</script>
+</body>
+</html>

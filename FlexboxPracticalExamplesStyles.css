@@ -1,0 +1,30 @@
+﻿body {
+    margin: 2%;
+    font-family: helvetica;
+}
+h1 {
+    text-align: center;
+    margin: 10vh 0 7vh 0;
+}
+
+h2 {
+    margin: 5px;
+    padding: 10px;
+    background: deeppink;
+    color: white;
+    text-align: center;
+}
+
+.example {
+    border: 5px dotted purple;
+}
+
+.example-layout {
+    display: flex;
+}
+
+
+
+.note {
+    margin: 20vh 0 0 10vw;
+}
